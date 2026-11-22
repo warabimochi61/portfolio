@@ -1,0 +1,136 @@
+.script-container {
+  width: 1536px;
+}
+
+.script-display {
+  display: grid;
+  grid-template-columns: 212px 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  width: 1536px;
+  height: 864px;
+  color: #fff;
+  user-select: none;
+  background-color: var(--color-display-bg);
+}
+
+/* サイド */
+.script-side {
+  background-color: var(--color-display-surface);
+
+  hr {
+    height: 1px;
+    background-color: #fff;
+  }
+}
+
+.script-side-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-left: 3px;
+  font-size: 30px;
+}
+
+.script-side-intensity-value {
+  display: flex;
+  align-items: center;
+  width: 66px;  
+  height: 32px;
+  border: 2px solid transparent;
+  font-size: 26px;
+}
+
+.script-side-name {
+  &.is-active {
+    background-color: var(--color-blue);
+  }
+}
+
+.script-counter {
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  right: 8px;
+  height: 52px;
+  position: absolute;
+  font-size: 40px;
+}
+
+.script-counter-current {
+  width: 52px;
+  text-align: right;
+}
+
+.script-counter-slash {
+  width: 52px;
+  text-align: center;
+}
+
+.script-counter-max {
+  width: 52px;
+  text-align: right;
+  margin-right: 26px;
+}
+
+.script-counter-icon {
+  width: 36px;
+
+  &.is-sharp {
+    font-size: 34px;
+  }
+}
+
+/* 原稿 */
+.script-main {
+  font-size: var(--script-font-size);
+  letter-spacing: 3px;
+}
+
+.script-text {
+  display: flex;
+  align-items: center;
+  height: var(--script-text-height);
+  padding-left: 3px;
+}
+
+.script-spacer {
+  height: 26px;
+}
+
+/* 震度 */
+.script-intensity-section {
+  margin-top: 24px;
+}
+
+.script-intensity-header {
+  display: flex;
+  align-items: center;
+  height: var(--script-text-height);
+}
+
+.script-intensity-header-value {
+  display: flex;
+  align-items: center;
+  width: 84px;
+  height: var(--script-font-size);
+  margin-right: 44px;
+  font-size: 36px;
+}
+
+.script-intensity-body {
+  display: flex;
+  gap: 46px;
+  padding-left: 142px;
+}
+
+.script-intensity-ruby {
+  height: 46px;
+  padding-top: 12px;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
+.script-intensity-name {
+  height: 72px;
+}

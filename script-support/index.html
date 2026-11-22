@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>現行支援システム デザインのみ</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/script.css">
+  <link rel="stylesheet" href="assets/css/state.css">
+</head>
+<body>
+  <div class="script-container">
+    <div class="script-display">
+      <div class="script-side">
+        <div class="script-side-item script-side-intensity">
+          <span class="script-side-intensity-text">最大震度</span>
+          <span class="script-side-intensity-value is-intensity-5">５強</span>
+        </div>
+        <div class="script-side-item">津波なし</div>
+        <hr>
+        <div class="script-side-item">全国</div>
+        <div class="script-side-item script-side-name is-active">市町村震度</div>
+        <div class="script-side-item script-side-name"></div>
+        <hr>
+        <div class="script-side-item">新規入電</div>
+      </div>
+      <div class="script-main">
+        <div class="script-text">午後０１時０４分頃、東海地方で</div>
+        <div class="script-text">地震がありました。</div>
+        <div class="script-spacer"></div>
+        <div class="script-text">震源地は静岡県西部</div>
+        <div class="script-text">震源の深さは４０ｋｍ</div>
+        <div class="script-text">地震の規模を表すマグニチュードは５．７と</div>
+        <div class="script-text">推定されています。</div>
+        <div class="script-text">この地震による津波の心配はありません。</div>
+        <div class="script-intensity-section">
+          <div class="script-intensity-header">
+            <div class="script-intensity-header-value is-intensity-5">５強</div>
+            <div class="script-intensity-header-name">【愛知県】</div>
+          </div>
+          <div class="script-intensity-body">
+            <div class="script-intensity-box">
+              <div class="script-intensity-ruby">ちた</div>
+              <div class="script-intensity-name">知多市</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="script-counter">
+        <div class="script-counter-current">1</div>
+        <div class="script-counter-slash">/</div>
+        <div class="script-counter-max">1</div>
+        <div class="script-counter-icon is-sharp">＃</div>
+        <div class="script-counter-icon is-sharp">＃</div>
+      </div>
+    </div>
+  </div>
+  <div class="control-container">
+    <div class="control-script">
+      <div class="control-script-row-head">
+        <button class="is-active-yellow">使用宣言</button>
+        <button class="is-active-red">全国</button>
+        <button disabled>管内</button>
+        <button disabled>ローカル</button>
+        <button class="is-active-yellow">テスト</button>
+      </div>
+      <div class="control-script-row">
+        <button disabled>
+          <span>緊急地震</span>
+          <span>速報</span>
+        </button>
+        <button disabled>震度速報</button>
+        <button class="is-active-yellow">市町村震度</button>
+        <button disabled>気象・噴火</button>
+      </div>
+      <div class="control-script-row">
+        <button disabled>
+          <span>予想津波</span>
+          <span>（時刻付き）</span>
+        </button>
+        <button disabled>
+          <span>予想津波</span>
+          <span>（北から）</span>
+        </button>
+        <button disabled>観測津波</button>
+        <button disabled>沖合津波</button>
+      </div>
+      <div class="control-script-foot">
+        <button>前ページ</button>
+        <button>次ページ</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

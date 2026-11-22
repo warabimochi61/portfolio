@@ -1,0 +1,64 @@
+/* ブックマーク */
+.p-bookmark-container {
+  max-width: var(--p-common-width);
+}
+
+.p-bookmark-heading {
+  height: 34px;
+  line-height: 34px;
+  font-size: 1.1rem;
+}
+
+.p-bookmark-card {
+  display: grid;
+  grid-template-columns: 64px auto;
+  grid-template-rows: 34px 1fr;
+  gap: 4px 8px;
+  width: 100%;
+  height: 80px;
+  padding: 8px;
+  border-radius: 8px;
+  user-select: none;
+
+  &:hover {
+    background-color: var(--color-surface);
+    img{
+      filter: brightness(94%);
+    }
+  }
+}
+
+.p-bookmark-card-img-wrap {
+  grid-row: span 2 / span 2;
+  pointer-events: none;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.p-bookmark-card-title {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2px;
+  font-size: 1.1rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.p-bookmark-card-description {
+  font-size: 0.9rem;
+  color: var(--color-text-sub);
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.p-bookmark-error-message {
+  height: 44px;
+  line-height: 44px;
+  font-size: 1.1rem;
+  text-align: center;
+}

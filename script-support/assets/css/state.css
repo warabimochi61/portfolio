@@ -1,0 +1,36 @@
+/* 震度カラー */
+.is-intensity-1 {
+  color: var(--color-display-bg);
+  background-color: var(--color-intensity-1);
+}
+
+.is-intensity-2 {
+  color: var(--color-display-bg);
+  background-color: var(--color-intensity-2);
+}
+
+.is-intensity-3 {
+  color: var(--color-display-bg);
+  background-color: var(--color-intensity-3);
+}
+
+.is-intensity-4 {
+  color: var(--color-display-bg);
+  background-color: var(--color-intensity-4);
+}
+
+.is-intensity-5 {
+  color: #fff;
+  background-color: var(--color-intensity-5);
+}
+
+.is-intensity-6 {
+  color: var(--color-intensity-5);
+  background-color: var(--color-intensity-6);
+}
+
+.is-intensity-7 {
+  color: #fff;
+  background-color: var(--color-intensity-7);
+  border-color: var(--color-intensity-border-7);
+}

@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: blueviolet;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.color-red {
+  color: red;
+}
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  cursor: pointer;
+}
+
+:root{
+  --color-text: #333,
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html,
+body {
+  scrollbar-gutter: stable;
+  min-width: 320px;
+}
+
+body {
+  color: var(--color-text);
+  margin-bottom: 128px;
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: 64px auto;  
+  padding: 0 32px;
+}
+
+.common-container {
+  h1,
+  h2{
+    margin: 16px 0;
+  }
+}
+
+/* ヘッダー */
+.header {
+  display: flex;
+  align-items: center;
+  height: 54px;
+  padding: 0 32px;
+  box-shadow: 0px 0px 16px 0px rgb(0, 0, 0, 15%);
+
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+
+/* トップ */
+.top-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  img {
+    max-width: 200px;
+    min-width: 100px;
+    border: 2px solid var(--color-text);
+    border-radius: 50%;
+  }
+}
+
+/* 画像エリア */
+.img-section {
+  background-color: #f6f6f6;
+}
+
+.img-container{
+  padding: 16px 32px;
+}
+
+.card-area{
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 16px 0;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 0px 16px 0px rgb(0, 0, 0, 15%);
+  border-radius: 8px;
+
+  p {
+    height: 42px;
+    line-height: 42px;
+    padding-left: 16px;
+  }
+}
+
+.card-media{
+  aspect-ratio: 16 / 9;
+
+  img {
+    border-radius: 8px 8px 0 0;
+    max-width: 100%;
+  }
+}
+
+/* ブックマーク */
+.bookmark-nav{
+  display: flex;
+  gap: 16px;
+  height: 48px;
+  margin-bottom: 16px;
+  overflow: auto hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.bookmark-nav-btn {
+  padding: 0 8px;
+  font-size: 1.1rem;
+  border-bottom: 3px solid transparent;
+
+  &:hover{
+    border-color:#ccc;
+  }
+
+  &.is-active{
+    border-color: blueviolet;
+  }
+}
+
+.bookmark-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bookmark-item {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--color-text);
+  &:hover {
+    background-color: #eee;
+  }
+}
+
+.production-contents {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0 16px;
+}
+
+.production-card-media {
+  aspect-ratio: 16 / 9;
+}

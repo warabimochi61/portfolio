@@ -1,0 +1,142 @@
+/* リセット */
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+img, 
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+/* メイン */
+:root {
+  --color-display-bg: #111;
+  --color-display-surface: #222;
+  --color-blue: #0041ff;
+  --color-magenta: #c800ff;
+  --color-red: #ff2800;
+  --color-yellow: #faf500;
+  --color-intensity-1: #00B6FF;
+  --color-intensity-2: #63D544;
+  --color-intensity-3: #F4DB6A;
+  --color-intensity-4: #FF6900;
+  --color-intensity-5: #BE0011;
+  --color-intensity-6: #FFC9DF;
+  --color-intensity-7: #BE0011;
+  --color-intensity-border-7: #ffff35;
+  --script-font-size: 44px;
+  --script-text-height: 58px;
+}
+
+body,
+html {
+  overflow: hidden;
+  line-height: 1;
+}
+
+/* レイアウト */
+body{
+  display: flex;
+  font-family: "BIZ UDGothic";
+
+  > {
+    flex-shrink: 0;
+  }
+}
+
+/* コントロール */
+.control-container {
+  width: 384px;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #222;
+}
+
+.control-script {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+
+  button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    padding-top: 1px;
+
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: linear-gradient(180deg, hsl(0, 0%, 100%) 0, hsl(0, 0%, 92%));
+
+    &.is-active-yellow{
+      background-image: linear-gradient(hsl(57, 70%, 78%), hsl(57, 70%, 48%));
+    }
+
+    &.is-active-red{
+      background-image: linear-gradient(hsl(16, 70%, 84%), hsl(16, 70%, 54%));
+    }
+
+    &:disabled {
+      background-image: none;
+      color: #ccc;
+      background-color: #f6f6f6;
+    }
+  }
+}
+
+.control-script-row {
+  display: grid;
+  grid-template-columns: repeat(4, 89px); 
+  grid-template-rows: 46px;
+  gap: 4px;
+}
+
+.control-script-row-head{
+  display: grid;
+  grid-template-columns: 89px repeat(4, minmax(0, 1fr));
+  grid-template-rows: 46px;
+  gap: 4px;
+}
+
+.control-script-foot{
+  display: flex;
+  justify-content: center;
+  gap: 89px;
+
+  button {
+    width: 89px;
+    height: 46px;
+  }
+}

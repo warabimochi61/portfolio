@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="assets/css/style.css" class="">
+  <link rel="stylesheet" href="assets/css/page.css" class="">
+  <link rel="stylesheet" href="assets/css/bookmark.css" class="">
+  <script src="data/bookmark.js" defer></script>
+  <script src="src/utils.js" defer></script>
+  <script src="src/component.js" defer></script>
+  <script src="src/pages/base.js" defer></script>
+  <script src="src/pages/bookmark.js" defer></script>
+  <script src="src/core/router.js" defer></script>
+  <script src="src/core/routes.js" defer></script>
+  <script src="src/event.js" defer></script>
+  <title>Web26</title>
+</head>
+<body class="l-1column">
+  <header class="l-header">
+    <button class="l-header-title" data-url="#bookmark">
+      <img src="assets/icon/apps.png" alt="">
+      <span id="js-header-title"></span>
+    </button>
+    <div id="js-header-search" class="l-header-search" style="display: none;">
+      <input type="text" id="js-header-search-input" class="l-header-search-input" placeholder="検索" autocomplete="off">
+      <button id="js-header-search-clear" class="l-header-search-clear">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="m258.42-218.69-38.92-39.73L440.27-480 219.5-701.58l38.92-39.73L480-519.73l221.58-221.58 38.92 39.73L519.73-480 740.5-258.42l-38.92 39.73L480-440.27 258.42-218.69Z"/></svg>
+      </button>
+    </div>
+  </header>
+  <aside id="js-sidebar" class="l-sidebar" style="display: none;">
+    <div id="js-sidebar-container" class="l-sidebar-container"></div>
+  </aside>
+  <main class="l-main">
+    <div id="js-main-container" class="l-main-container"></div>
+  </main>
+</body>
+</html>
