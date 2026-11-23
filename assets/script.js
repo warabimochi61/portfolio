@@ -1,3 +1,4 @@
+'use strict';
 const BOOKMARK_DATA = {
   aircraft: [
     {
@@ -25,7 +26,7 @@ const BOOKMARK_DATA = {
       title: '気象庁 地震情報'
     },
     {
-      url: 'https://www.jma.go.jp/bosai/map.html',
+      url: 'https://www.jma.go.jp/bosai/map.html#5/36.474/134.824/&contents=forecast',
       title: '気象庁 天気予報'
     },
   ],
